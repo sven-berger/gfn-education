@@ -22,5 +22,5 @@ jobs:
       run: |
         echo "Auf den Server herunterladen"
         ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
-        cd /var/customers/webs/gfn && git pull origin main
+        cd /var/customers/webs/gfn-education && git pull origin main
         "
