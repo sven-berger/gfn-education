@@ -1,7 +1,7 @@
 <?php
 // Datenbank-Zugangsdaten
 $server = "localhost";
-$benutzer = "gfn_ftp1";
+$benutzer = "gfn_system";
 $passwort = "-c3?8HvD";
 $dbname = "gfn_system";
 
