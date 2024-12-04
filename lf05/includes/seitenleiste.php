@@ -2,7 +2,7 @@
 <h2>21.10.2024</h2>
     <ul>  
         <li><a href="hello-world.php">Hello World!</a></li>
-        <li><a href="hrechnen.php">Rechnen</a></li>
+        <li><a href="rechnen.php">Rechnen</a></li>
     </ul>  
 <h2>22.10.2024</h2>
     <ul>  
