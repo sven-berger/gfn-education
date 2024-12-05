@@ -15,5 +15,7 @@
         <li><a href="5-12.php">Aufgabe 5.12</a></li>
         <li><a href="5-13.php">Aufgabe 5.13</a></li>
         <li><a href="5-14.php">Aufgabe 5.14</a></li>
+        <li><a href="5-15.php">Aufgabe 5.15</a></li>
+        <li><a href="5-16.php">Aufgabe 5.16</a></li>
     </ul>  
 </div>
