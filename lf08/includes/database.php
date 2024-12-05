@@ -1,8 +1,8 @@
 <?php
 // Datenbank-Zugangsdaten
-$server = "localhost";
-$benutzer = "gfn_fahrradvermietung";
-$passwort = "-c3?8HvD";
+$server = "116.202.66.48";
+$benutzer = "hans-peter";
+$passwort = "DieS?ms22";
 $dbname = "gfn_fahrradvermietung";
 
 // Verbindung herstellen
