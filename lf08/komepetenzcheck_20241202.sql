@@ -71,5 +71,3 @@ SELECT bezeichnung, herstellernr, herstellername FROM `hersteller` JOIN `fahrrad
 /*********************** 5.17 ***********************/
 
 SELECT bezeichnung, hersteller.herstellernr, herstellername FROM `hersteller` JOIN `modelle` WHERE herstellername LIKE 'Scott' AND tagesmietpreis > '12';
-
-
