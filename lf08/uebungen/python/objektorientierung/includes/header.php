@@ -22,5 +22,3 @@
 
 <?php include("includes/navigation2.php"); ?>
 <div class="content">
-<h2>Python-Befehl</h2>
-<pre><code class="language-python">
