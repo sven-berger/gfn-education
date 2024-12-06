@@ -20,7 +20,7 @@ $ausgabe = $verbindung->query($sql);
         <?php while ($inhalt = $ausgabe->fetch_assoc()): ?>
             <tr>
                 <td><?php echo $inhalt['bezeichnung']; ?></td>
-                <td><?php echo $inhalt['anzahl'] . " Fahräder"; ?></td>
+                <td><?php echo $inhalt['anzahl']; ?></td>
             </tr>
         <?php endwhile; ?>
     </tbody>

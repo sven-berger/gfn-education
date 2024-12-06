@@ -27,5 +27,6 @@
         <li><a href="5-24.php">Aufgabe 5.24</a></li>
         <li><a href="5-25.php">Aufgabe 5.25</a></li>
         <li><a href="5-26.php">Aufgabe 5.26</a></li>
+        <li><a href="5-27.php">Aufgabe 5.27</a></li>
     </ul>  
 </div>
