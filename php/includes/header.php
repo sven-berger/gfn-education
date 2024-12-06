@@ -19,8 +19,6 @@
 
 <div class="main-content">
 <?php include("includes/navigation.php"); ?>
-<?php include("includes/navigation2.php"); ?>
 
+<?php include("includes/navigation2.php"); ?>
 <div class="content">
-<h2>PHP-Befehl</h2>
-<pre><code class="language-php">
