@@ -20,7 +20,6 @@
 <div class="main-content">
 <?php include("includes/navigation.php"); ?>
 
-<?php include("includes/navigation2.php"); ?>
 <div class="content">
 <h2>SQL-Befehl</h2>
 <pre><code class="language-sql">

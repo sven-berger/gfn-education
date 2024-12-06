@@ -74,9 +74,20 @@ body {
     margin-bottom: 20px;
 }
 
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+        
+.navbar a:hover {
+    color: #a4d6d6;
+}
+
 /* Menüleiste */
 .navbar2 {
-    background-color: #7f8c8d;
+    background-color: #c0392b;
     color: #fff;
     padding: 10px 20px;
     box-sizing: border-box;
@@ -86,15 +97,15 @@ body {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-        
-.navbar a {
+
+.navbar2 a {
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
     transition: color 0.3s ease;
 }
         
-.navbar a:hover {
+.navbar2 a:hover {
     color: #a4d6d6;
 }
         

@@ -73,19 +73,6 @@ body {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-
-/* Menüleiste */
-.navbar2 {
-    background-color: #7f8c8d;
-    color: #fff;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
         
 .navbar a {
     color: #fff;
