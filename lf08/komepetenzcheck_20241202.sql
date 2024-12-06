@@ -70,4 +70,48 @@ SELECT bezeichnung, herstellernr, herstellername FROM `hersteller` JOIN `fahrrad
 
 /*********************** 5.17 ***********************/
 
-SELECT bezeichnung, hersteller.herstellernr, herstellername FROM `hersteller` JOIN `modelle` WHERE herstellername LIKE 'Scott' AND tagesmietpreis > '12';
+SELECT modelle.bezeichnung, hersteller.herstellernr, hersteller.herstellername, tagesmietpreis FROM hersteller JOIN modelle WHERE herstellername LIKE 'Scott' AND tagesmietpreis > '12';
+
+/*********************** 5.18 ***********************/
+
+SELECT MAX(modelle.tagesmietpreis) AS max_tagesmietpreis FROM modelle JOIN hersteller ON hersteller.herstellernr = modelle.herstellernr WHERE hersteller.herstellername = 'Scott';
+
+/*********************** 5.19 ***********************/
+
+SELECT MIN(modelle.tagesmietpreis) AS max_tagesmietpreis FROM modelle JOIN hersteller ON hersteller.herstellernr = modelle.herstellernr WHERE hersteller.herstellername = 'Scott';
+
+/*********************** 5.20 ***********************/
+
+SELECT COUNT(*) FROM modelle JOIN hersteller ON hersteller.herstellernr = modelle.herstellernr WHERE hersteller.herstellername = 'Scott';
+
+/*********************** 5.21 ***********************/
+
+SELECT fahrraeder.fahrradnr, fahrradarten.bezeichnung, hersteller.herstellername FROM fahrraeder JOIN modelle ON fahrraeder.modellnr = modelle.modellnr JOIN fahrradarten ON modelle.artnr = fahrradarten.artnr JOIN hersteller ON modelle.herstellernr = hersteller.herstellernr WHERE fahrradarten.bezeichnung = 'Kinderrad';
+
+/*********************** 5.22 ***********************/
+
+SELECT COUNT(*) AS anzahl_fahrraeder FROM modelle JOIN fahrradarten ON fahrradarten.artnr = modelle.artnr WHERE fahrradarten.bezeichnung = 'Kinderrad';
+
+/*********************** 5.23 ***********************/
+
+SELECT fahrraeder.fahrradnr, modelle.bezeichnung AS modell_bezeichnung, fahrradarten.bezeichnung AS fahrradart_bezeichnung FROM fahrraeder JOIN modelle ON modelle.modellnr = fahrraeder.modellnr JOIN fahrradarten ON modelle.artnr = fahrradarten.artnr WHERE fahrradarten.bezeichnung NOT IN ('Kinderrad', 'Jugendrad');
+
+/*********************** 5.24 ***********************/
+
+SELECT AVG(modelle.tagesmietpreis) AS durchschnitt_tagesmietpreis FROM modelle JOIN fahrradarten ON modelle.artnr = fahrradarten.artnr WHERE fahrradarten.bezeichnung = 'Kinderrad';
+
+/*********************** 5.25 ***********************/
+
+SELECT MAX(modelle.tagesmietpreis) AS hoechster_tagesmietpreis, modelle.bezeichnung FROM modelle JOIN fahrradarten WHERE fahrradarten.bezeichnung = 'Kinderrad';
+
+/*********************** 5.26 ***********************/
+
+SELECT fahrradarten.bezeichnung, COUNT(*) AS anzahl FROM fahrraeder JOIN modelle ON modelle.modellnr = fahrraeder.modellnr JOIN fahrradarten ON modelle.artnr = fahrradarten.artnr GROUP BY fahrradarten.bezeichnung;
+
+/*********************** 5.27 ***********************/
+
+SELECT hersteller.herstellername, COUNT(hersteller.herstellername) AS anzahl FROM fahrraeder JOIN modelle ON modelle.modellnr = fahrraeder.modellnr JOIN hersteller ON modelle.herstellernr = hersteller.herstellernr GROUP BY hersteller.herstellername;
+
+/*********************** 5.28 ***********************/
+
+SELECT hersteller.herstellername AS hersteller, COUNT(*) AS anzahl FROM hersteller JOIN modelle ON modelle.herstellernr = hersteller.herstellernr GROUP BY hersteller ORDER BY anzahl DESC LIMIT 1;
